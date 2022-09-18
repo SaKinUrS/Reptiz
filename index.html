@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rentiz</title>
+    <script src="js/swiper.js"></script>
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#!" class="header__logo">
+                <svg width="132" height="47" viewBox="0 0 132 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="31" fill="var(--accent-color)" />
+                    <path
+                        d="M15.7976 38V9.63636H26.4339C28.6129 9.63636 30.4411 10.0149 31.9183 10.772C33.4048 11.5291 34.5266 12.5909 35.2837 13.9574C36.0501 15.3146 36.4332 16.8981 36.4332 18.7077C36.4332 20.5266 36.0455 22.1055 35.2699 23.4442C34.5036 24.7738 33.3725 25.8033 31.8768 26.5327C30.381 27.2528 28.5437 27.6129 26.3647 27.6129H18.7891V23.3473H25.6722C26.9464 23.3473 27.9897 23.1719 28.8022 22.821C29.6147 22.4609 30.2148 21.9393 30.6026 21.256C30.9996 20.5636 31.1982 19.7141 31.1982 18.7077C31.1982 17.7013 30.9996 16.8427 30.6026 16.1317C30.2056 15.4116 29.6009 14.8668 28.7884 14.4975C27.9759 14.119 26.9279 13.9297 25.6445 13.9297H20.9357V38H15.7976ZM30.4503 25.1477L37.4719 38H31.7383L24.8413 25.1477H30.4503ZM50.0542 38.4155C47.9213 38.4155 46.0794 37.9723 44.5282 37.0859C42.9863 36.1903 41.7999 34.9254 40.9689 33.2912C40.138 31.6477 39.7225 29.7134 39.7225 27.4883C39.7225 25.3001 40.138 23.3796 40.9689 21.7269C41.8091 20.065 42.9817 18.7724 44.4867 17.8491C45.9917 16.9165 47.7598 16.4503 49.791 16.4503C51.1021 16.4503 52.3393 16.6626 53.5027 17.0874C54.6752 17.5028 55.7093 18.1491 56.6049 19.0263C57.5098 19.9034 58.2207 21.0206 58.7377 22.3778C59.2548 23.7259 59.5133 25.3324 59.5133 27.1974V28.7347H42.0769V25.3555H54.7076C54.6983 24.3952 54.4906 23.5412 54.0843 22.7933C53.6781 22.0362 53.1103 21.4407 52.3809 21.0067C51.6607 20.5728 50.8205 20.3558 49.8603 20.3558C48.8354 20.3558 47.9352 20.6051 47.1596 21.1037C46.3841 21.593 45.7793 22.2393 45.3453 23.0426C44.9206 23.8366 44.7037 24.7092 44.6944 25.6602V28.6101C44.6944 29.8473 44.9206 30.9091 45.373 31.7955C45.8255 32.6726 46.4579 33.3466 47.2704 33.8175C48.0829 34.2791 49.0339 34.5099 50.1234 34.5099C50.8528 34.5099 51.513 34.4084 52.1039 34.2053C52.6948 33.9929 53.2072 33.6836 53.6412 33.2773C54.0751 32.8711 54.4029 32.3679 54.6245 31.7678L59.3056 32.294C59.0101 33.5312 58.4469 34.6115 57.6159 35.5348C56.7942 36.4489 55.7417 37.1598 54.4583 37.6676C53.1749 38.1662 51.7069 38.4155 50.0542 38.4155ZM68.7682 25.5355V38H63.7547V16.7273H68.5466V20.342H68.7959C69.2852 19.1509 70.0654 18.2045 71.1365 17.5028C72.2167 16.8011 73.5509 16.4503 75.1389 16.4503C76.607 16.4503 77.8857 16.7642 78.9752 17.392C80.074 18.0199 80.9234 18.9293 81.5235 20.1204C82.1329 21.3114 82.433 22.7564 82.4237 24.4553V38H77.4102V25.2308C77.4102 23.8089 77.0409 22.6964 76.3023 21.8931C75.5729 21.0898 74.5619 20.6882 73.2693 20.6882C72.3921 20.6882 71.6119 20.8821 70.9287 21.2699C70.2547 21.6484 69.7238 22.1978 69.336 22.918C68.9575 23.6381 68.7682 24.5107 68.7682 25.5355ZM98.1428 16.7273V20.6051H85.9138V16.7273H98.1428ZM88.933 11.6307H93.9465V31.6016C93.9465 32.2756 94.048 32.7926 94.2512 33.1527C94.4635 33.5036 94.7405 33.7436 95.0821 33.8729C95.4237 34.0021 95.8023 34.0668 96.2178 34.0668C96.5317 34.0668 96.8179 34.0437 97.0764 33.9975C97.3442 33.9513 97.5473 33.9098 97.6858 33.8729L98.5306 37.7923C98.2629 37.8846 97.8797 37.9862 97.3811 38.0969C96.8918 38.2077 96.2916 38.2724 95.5807 38.2908C94.325 38.3278 93.194 38.1385 92.1876 37.723C91.1812 37.2983 90.3825 36.6428 89.7916 35.7564C89.21 34.87 88.9237 33.7621 88.933 32.4325V11.6307ZM102.336 38V16.7273H107.349V38H102.336ZM104.856 13.7081C104.062 13.7081 103.379 13.445 102.807 12.9187C102.234 12.3832 101.948 11.7415 101.948 10.9936C101.948 10.2365 102.234 9.59481 102.807 9.06854C103.379 8.53302 104.062 8.26527 104.856 8.26527C105.66 8.26527 106.343 8.53302 106.906 9.06854C107.479 9.59481 107.765 10.2365 107.765 10.9936C107.765 11.7415 107.479 12.3832 106.906 12.9187C106.343 13.445 105.66 13.7081 104.856 13.7081ZM112.228 38V34.8146L123.196 21.0621V20.8821H112.588V16.7273H129.332V20.1481L118.889 33.6651V33.8452H129.692V38H112.228Z"
+                        fill="white" />
+                </svg>
+
+            </a>
+            <div class="header__navigation">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Buying</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Renting</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Selling</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="login header__btn">Login</button>
+                    <button class="register header__btn">Sign Up</button>
+                </div>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Perfect way to buy and sell a home</h1>
+                    <p class="hero__text text">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa
+                        aliqua dui pellentesque. Ac, gravida in eget non amet eget purus non.
+                    </p>
+                    <div class="hero__filter filter">
+                        <div class="filter__block block-filter">
+                            <div class="block-filter__button">
+                                <div class="block-filter__header">
+                                    <div class="block-filter__type">Purpose</div>
+                                    <div class="block-filter__icon"></div>
+                                </div>
+                                <div class="block-filter__value">Buy</div>
+                            </div>
+                            <div class="block-filter__dropdown">
+                                <div class="block-filter__item">Buy</div>
+                                <div class="block-filter__item">Sell</div>
+                            </div>
+                        </div>
+                        <div class="filter__block block-filter">
+                            <div class="block-filter__button">
+                                <div class="block-filter__header">
+                                    <div class="block-filter__type">Location</div>
+                                    <div class="block-filter__icon"></div>
+                                </div>
+                                <div class="block-filter__value">Toronto, Canada</div>
+                            </div>
+                            <div class="block-filter__dropdown">
+                                <div class="block-filter__item">Bishkek, Kyrgyzstan</div>
+                                <div class="block-filter__item">London, Britain</div>
+                                <div class="block-filter__item">Astana, Kazakhstan</div>
+                            </div>
+                        </div>
+                        <div class="filter__block block-filter">
+                            <div class="block-filter__button">
+                                <div class="block-filter__header">
+                                    <div class="block-filter__type">Type</div>
+                                    <div class="block-filter__icon"></div>
+                                </div>
+                                <div class="block-filter__value">Industrial home</div>
+                            </div>
+                            <div class="block-filter__dropdown">
+                                <div class="block-filter__item">Industrial home</div>
+                                <div class="block-filter__item">Wood home</div>
+                            </div>
+                        </div>
+                        <div class="filter__btn">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./img/hero-bg.jpg" alt="Big House">
+                </div>
+            </div>
+
+            <svg class="hero-decor" width="128" height="501" viewBox="0 0 128 501" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="92.4355" y="314.033" width="127.863" height="123.867"
+                    transform="rotate(42.3449 92.4355 314.033)" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="12" />
+                <rect x="92.4355" y="212.355" width="127.863" height="123.867"
+                    transform="rotate(42.3449 92.4355 212.355)" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="12" />
+                <rect x="92.4355" y="110.678" width="127.863" height="123.867"
+                    transform="rotate(42.3449 92.4355 110.678)" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="12" />
+                <rect x="92.4355" y="9" width="127.863" height="123.867" transform="rotate(42.3449 92.4355 9)"
+                    fill="var(--accent-color)" stroke="#121B25" stroke-width="12" />
+            </svg>
+
+
+        </section>
+        <section class="featured">
+            <div class="featured__container">
+                <div class="featured__title title">Featured In</div>
+                <div class="featured__box">
+                    <div class="featured__item">
+                        <img src="img/Features/logo1.svg" alt="logo1" class="featured__img">
+                    </div>
+                    <div class="featured__item">
+                        <img src="img/Features/logo2.svg" alt="logo2" class="featured__img">
+                    </div>
+                    <div class="featured__item">
+                        <img src="img/Features/logo3.svg" alt="logo3" class="featured__img">
+                    </div>
+                    <div class="featured__item">
+                        <img src="img/Features/logo4.svg" alt="logo4" class="featured__img">
+                    </div>
+                    <div class="featured__item">
+                        <img src="img/Features/logo5.svg" alt="logo5" class="featured__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="popular__container">
+                <div class="popular__title title">Popular Residence</div>
+                <div class="popular__slider">
+                    <div class="swiper popular-slider">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/1.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Aliva Priva Jalvin</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/2.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Hard line orchar</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/3.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Allpine lenevote</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/1.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Aliva Priva Jalvin</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/2.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Hard line orchar</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide popular-slide">
+                                <div class="popular-slide__thumb">
+                                    <img src="./img/slider/3.jpg" alt="">
+                                </div>
+                                <div class="popular-slide__info">
+                                    <div class="popular-slide__title">Allpine lenevote</div>
+                                    <div class="popular-slide__desc text">1087 Pin Oak Drive, Clinton, USA</div>
+                                </div>
+                                <div class="popular-slide__labels">
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>4 beds</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+                                        <span>2 bath</span>
+                                    </div>
+                                    <div class="popular-slide__label">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+                                                fill="var(--accent-color)" />
+                                        </svg>
+
+                                        <span>1203 Sqft.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slider-buttons">
+                        <div class="popular-slider-btn popular-slider-prev swiper-button-prev"></div>
+                        <div class="popular-slider-btn popular-slider-next swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="popular__btn">
+                    <a href="#" class="popular__link link">View all properties</a>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__container">
+                <div class="advantages__title title">Why to choose us</div>
+                <div class="advantages__body">
+                    <div class="advantages__item item-advantages">
+                        <div class="item-advantages__pic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0.187988C8.7114 0.187857 7.43538 0.441555 6.24481 0.934595C5.05425 1.42764 3.97247 2.15036 3.06123 3.0615C2.15 3.97264 1.42716 5.05436 0.934001 6.24487C0.44084 7.43538 0.187012 8.71137 0.187012 9.99999C0.18688 11.2887 0.440612 12.5648 0.933714 13.7554C1.42682 14.946 2.14963 16.0279 3.06088 16.9391C3.97213 17.8504 5.05396 18.5732 6.24458 19.0663C7.43521 19.5594 8.71131 19.8131 10 19.813C12.29 19.813 14.393 19.002 16.063 17.688L16.938 18.563C16.7583 18.9121 16.6947 19.3094 16.7564 19.6972C16.8181 20.0849 17.0019 20.4429 17.281 20.719L21.875 25.344C22.588 26.058 23.755 26.058 24.469 25.344L25.344 24.469C25.6866 24.1243 25.8789 23.658 25.8789 23.172C25.8789 22.686 25.6866 22.2197 25.344 21.875L20.719 17.281C20.441 17.0037 20.0809 16.8236 19.6922 16.7674C19.3036 16.7112 18.9072 16.7819 18.562 16.969L17.687 16.094C18.8324 14.6487 19.5472 12.9098 19.7496 11.0768C19.952 9.24383 19.6337 7.39091 18.8313 5.73052C18.0288 4.07012 16.7747 2.66947 15.2128 1.68917C13.6508 0.708859 11.8441 0.188582 10 0.187988V0.187988ZM10 1.99999C12.1217 1.99999 14.1566 2.84284 15.6569 4.34313C17.1572 5.84343 18 7.87826 18 9.99999C18 12.1217 17.1572 14.1566 15.6569 15.6568C14.1566 17.1571 12.1217 18 10 18C7.87828 18 5.84345 17.1571 4.34316 15.6568C2.84287 14.1566 2.00001 12.1217 2.00001 9.99999C2.00001 7.87826 2.84287 5.84343 4.34316 4.34313C5.84345 2.84284 7.87828 1.99999 10 1.99999V1.99999ZM4.93701 7.46899C4.40365 8.3329 4.1224 9.3287 4.12501 10.344C4.12383 11.0625 4.26448 11.7742 4.5389 12.4383C4.81332 13.1024 5.21612 13.7057 5.7242 14.2138C6.23228 14.7219 6.83565 15.1247 7.49971 15.3991C8.16378 15.6735 8.87548 15.8142 9.59401 15.813C10.7236 15.8107 11.8252 15.4616 12.75 14.813C12.5007 14.8361 12.2504 14.8461 12 14.843C11.0719 14.8454 10.1525 14.6643 9.29454 14.3103C8.43661 13.9562 7.6571 13.4362 7.00078 12.7799C6.34446 12.1237 5.82427 11.3443 5.4701 10.4864C5.11594 9.6285 4.93477 8.7091 4.93701 7.78099C4.93701 7.67699 4.93201 7.57299 4.93701 7.46899V7.46899Z"
+                                    fill="var(--accent-color)" />
+                            </svg>
+
+
+                        </div>
+                        <div class="item-advantages__title">Easy to find</div>
+                        <div class="item-advantages__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in.
+                            Diam
+                            vitae, nec mattis lectus quam pretium amet facilisis.
+                        </div>
+                    </div>
+                    <div class="advantages__item item-advantages">
+                        <div class="item-advantages__pic">
+                            <svg width="92" height="100" viewBox="0 0 92 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.3516 2.9855e-05C21.5773 0.00419099 19.8559 0.604292 18.4636 1.70403L3.00056 13.921C1.66693 14.9758 0.709028 16.4325 0.269103 18.075C-0.170822 19.7174 -0.0693101 21.4579 0.558565 23.038L7.83956 41.348C8.29449 42.4926 9.01062 43.515 9.93082 44.3336C10.851 45.1522 11.9498 45.7445 13.1396 46.063L70.4576 61.423C72.4821 61.9645 74.6388 61.6796 76.4533 60.6311C78.2678 59.5827 79.5916 57.8564 80.1336 55.832L88.3136 25.303C88.8557 23.2789 88.5715 21.1223 87.5235 19.3077C86.4756 17.4931 84.7497 16.1691 82.7256 15.627L25.4076 0.26703C24.7366 0.0878951 24.045 -0.00188048 23.3506 2.9855e-05H23.3516ZM23.5516 4.21803C23.6946 4.22603 23.8356 4.24303 23.9766 4.26803C43.0166 9.31603 62.0366 14.45 81.0666 19.539C83.0306 19.79 84.6466 21.727 84.3396 23.719C81.6976 33.889 78.9216 44.029 76.2176 54.185C75.9636 56.153 74.0286 57.744 72.0376 57.458C53.4906 52.543 34.9596 47.545 16.4226 42.585C14.8376 42.161 12.9136 41.919 12.0206 40.34C9.54556 34.39 7.23356 28.37 4.83256 22.388C4.01256 20.929 3.96556 18.946 5.14256 17.66C9.58056 14.008 14.1396 10.513 18.6366 6.93203C20.0576 5.94403 21.2816 4.35203 23.1216 4.22003C23.2646 4.21003 23.4086 4.21003 23.5516 4.21803V4.21803ZM54.9946 15.05C51.0476 15.2679 47.2987 16.8489 44.3876 19.523L49.3146 20.843C50.0664 19.6631 50.9297 18.5581 51.8926 17.543C52.8686 16.527 53.9126 15.683 54.9946 15.05V15.05ZM59.3466 15.683C57.4206 15.647 55.2916 16.741 53.2596 18.857C52.5221 19.6344 51.8505 20.4716 51.2516 21.36L57.3856 23.005L59.3466 15.683ZM61.1986 16.1L59.2166 23.496L65.6886 25.229C65.6146 24.1601 65.452 23.0991 65.2026 22.057C64.4576 19.031 63.0396 16.945 61.1986 16.1V16.1ZM13.7826 16.174C12.4438 16.1826 11.1536 16.6765 10.1514 17.5641C9.14917 18.4517 8.50297 19.6727 8.33271 21.0006C8.16245 22.3285 8.47969 23.6731 9.22556 24.7849C9.97143 25.8966 11.0953 26.7 12.3886 27.046C13.1508 27.2511 13.9481 27.2906 14.7269 27.1619C15.5056 27.0332 16.2479 26.7393 16.9036 26.3C17.5594 25.8607 18.1135 25.2861 18.5288 24.6148C18.9441 23.9436 19.2109 23.1912 19.3113 22.4083C19.4117 21.6254 19.3433 20.83 19.1108 20.0757C18.8783 19.3214 18.4871 18.6256 17.9634 18.035C17.4396 17.4445 16.7956 16.9729 16.0745 16.6519C15.3533 16.3309 14.5719 16.1679 13.7826 16.174ZM65.7206 18.104C66.2846 19.144 66.7276 20.324 67.0426 21.603C67.3586 22.885 67.5516 24.278 67.6226 25.747L72.2146 26.979C71.0872 23.3858 68.8042 20.2658 65.7206 18.104V18.104ZM13.6926 20.392C14.3286 20.333 15.0146 20.775 15.1006 21.434C15.3776 22.496 14.1126 23.438 13.1846 22.838C12.0276 22.336 12.4786 20.436 13.6926 20.392ZM42.8886 21.082C41.4776 22.7539 40.4029 24.6825 39.7236 26.762L45.8736 28.412C46.4851 26.3759 47.302 24.4071 48.3116 22.536L42.8886 21.082ZM50.2026 23.042C49.2216 24.772 48.3676 26.75 47.7076 28.902L55.2616 30.925L56.8936 24.835L50.2026 23.042ZM58.7256 25.326L57.0936 31.416L64.9876 33.532C65.4916 31.338 65.7416 29.198 65.7556 27.209L58.7256 25.326ZM67.6456 27.716C67.5836 29.8409 67.3065 31.954 66.8186 34.023L72.6326 35.581C73.0956 33.38 73.1066 31.177 72.7306 29.077L67.6456 27.716ZM39.2336 28.592C38.7825 30.7335 38.7492 32.9419 39.1356 35.096L44.4696 36.525C44.5476 34.514 44.8446 32.396 45.3716 30.239L39.2336 28.592ZM47.2036 30.728C46.6964 32.7926 46.4124 34.9058 46.3566 37.031L53.1386 38.848L54.7706 32.757L47.2036 30.728ZM56.6036 33.248L54.9716 39.339L62.0926 41.247C63.1068 39.3789 63.9174 37.4073 64.5106 35.366L56.6036 33.248ZM66.3356 35.855C65.7473 37.8947 64.9567 39.8705 63.9756 41.753L68.9776 43.091C70.3879 41.4191 71.4619 39.4904 72.1406 37.411L66.3356 35.855ZM39.6516 37.195C40.7794 40.7907 43.0647 43.9125 46.1516 46.074C45.6816 45.1006 45.3169 44.0798 45.0636 43.029C44.7063 41.5389 44.5046 40.0158 44.4616 38.484L39.6516 37.195ZM46.3896 39C46.4512 40.2049 46.6233 41.4016 46.9036 42.575C47.5616 45.245 48.7446 47.181 50.2786 48.181C50.3886 48.219 50.4966 48.26 50.6086 48.296L52.6486 40.677L46.3896 39ZM54.4806 41.169L52.4396 48.787C52.7046 48.843 52.9696 48.894 53.2346 48.937C55.0326 48.801 56.9806 47.719 58.8466 45.775C59.6761 44.8993 60.4236 43.9493 61.0796 42.937L54.4806 41.169ZM87.6346 41.972L86.3806 46.682L86.5556 47.036C86.9516 47.839 86.8886 48.895 86.3556 49.504L86.3026 49.564L86.2616 49.63C80.7926 58.189 75.2606 66.718 69.8206 75.31L69.8006 75.344L69.7806 75.381C69.4526 76.003 68.9216 76.591 68.3406 76.943C67.7606 77.296 67.1706 77.428 66.5486 77.276H66.5426L66.5386 77.274C65.7786 77.098 64.9576 76.314 63.7546 75.652C51.6936 67.944 39.6686 60.173 27.6326 52.415C22.5126 50.891 17.1986 49.309 12.5546 47.858L63.6846 80.639L63.7016 80.649L63.7176 80.66C66.8566 82.51 71.1086 81.375 72.9276 78.226L72.9026 78.269C78.6546 69.313 84.4616 60.384 90.1866 51.399L90.2046 51.373L90.2196 51.344C91.6956 48.686 91.1336 45.239 88.9166 43.171L87.6346 41.972ZM63.0046 43.452C62.1506 44.827 61.2106 46.052 60.2146 47.089C59.5308 47.8061 58.7797 48.4557 57.9716 49.029C61.5204 48.5998 64.8454 47.0686 67.4786 44.651L63.0046 43.452ZM16.4546 55.672L51.3166 97.457C53.5976 100.395 58.1046 100.865 60.9416 98.46C69.1616 91.607 77.4046 84.775 85.6076 77.893L85.6236 77.879L85.6386 77.864C88.3636 75.386 88.4926 70.934 85.9686 68.273L85.9306 68.232L85.8846 68.192C85.6369 67.9882 85.3242 67.8803 85.0036 67.888C84.7257 67.9054 84.4609 68.012 84.2486 68.192C83.9356 68.452 83.8416 68.666 83.7346 68.858C83.6276 69.051 83.5446 69.227 83.4776 69.346C83.4116 69.465 83.3326 69.522 83.4596 69.416L83.4966 69.386C83.2096 69.606 82.9346 69.968 82.8656 70.38C82.7956 70.79 82.9156 71.123 83.0156 71.336C83.2146 71.76 83.3466 71.964 83.3216 71.872L83.3376 71.93L83.3606 71.987C83.7606 72.979 83.4366 74.341 82.5856 74.875L82.5196 74.917L82.4626 74.966C74.5066 81.764 66.3896 88.396 58.3556 95.136C57.3556 95.926 55.6676 95.963 54.8526 95.06C46.3786 84.97 37.9546 74.835 29.5206 64.706L16.4546 55.672Z"
+                                    fill="var(--accent-color)" />
+                            </svg>
+                        </div>
+                        <div class="item-advantages__title">Affordable Prices</div>
+                        <div class="item-advantages__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in.
+                            Diam
+                            vitae, nec mattis lectus quam pretium amet facilisis.
+                        </div>
+                    </div>
+                    <div class="advantages__item item-advantages">
+                        <div class="item-advantages__pic">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.75 0.75L13.25 2.75M3.25 0.75L0.75 2.75M11.25 12.25L12.25 13.25M2.75 12.25L1.75 13.25M7.25 5.75V8.25L5.75 9.25"
+                                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M7 13.25C9.8995 13.25 12.25 10.8995 12.25 8C12.25 5.10051 9.8995 2.75 7 2.75C4.10051 2.75 1.75 5.10051 1.75 8C1.75 10.8995 4.10051 13.25 7 13.25Z"
+                                    stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="item-advantages__title">Quickly Process</div>
+                        <div class="item-advantages__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in.
+                            Diam
+                            vitae, nec mattis lectus quam pretium amet facilisis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <svg class="reviews__decor" width="339" height="1138" viewBox="0 0 339 1138" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.47" d="M-200.716 3L308.507 576.302L-187.777 1134.52L-727 561.221L-200.716 3Z"
+                    stroke="var(--accent-color)" stroke-width="4" />
+                <path opacity="0.58" d="M-281.716 3L227.507 576.302L-268.777 1134.52L-808 561.221L-281.716 3Z"
+                    stroke="var(--accent-color)" stroke-width="4" />
+                <path opacity="0.9" d="M-358.716 3L150.507 576.302L-345.777 1134.52L-885 561.221L-358.716 3Z"
+                    stroke="var(--accent-color)" stroke-width="4" />
+            </svg>
+
+            <div class="reviews__container">
+                <div class="reviews__quotes">“</div>
+                <div class="reviews-slider slider-reviews swiper">
+                    <div class="swiper-wrapper">
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta
+                                quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor,
+                                porttitor.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__prof text">Ceo, Upstate</div>
+                            </div>
+                        </div>
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sed animi a debitis perferendis dignissimos ipsam quidem mollitia. Eos aspernatur
+                                recusandae, sint accusamus fugit nemo cumque corporis odit? Recusandae labore odio
+                                voluptates rerum aut. Labore, perspiciatis nemo omnis illum beatae qui voluptatibus,
+                                quas neque id iste facere sunt eaque tempore laboriosam.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__prof text">Ceo, Upstate</div>
+                            </div>
+                        </div>
+                        <div class="slider-reviews__slide swiper-slide">
+                            <div class="slider-reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Natus quod quaerat eligendi totam neque, voluptatum, velit perferendis amet esse facilis
+                                nobis repellendus, inventore nihil ducimus.</div>
+                            <div class="slider-reviews__info">
+                                <div class="slider-reviews__name">Elena Pravo</div>
+                                <div class="slider-reviews__prof text">Ceo, Upstate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-reviews__buttons">
+                        <div class="slider-reviews-btn slider-reviews-prev swiper-button-prev">
+                            <svg width="23" height="38" viewBox="0 0 23 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+                            </svg>
+                        </div>
+                        <div class="slider-reviews-btn slider-reviews-next swiper-button-next">
+                            <svg width="23" height="38" viewBox="0 0 23 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="gallery">
+            <div class='gallery__container'>
+                <div class="gallery__box">
+                    <div class="gallery__item swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/gallery/1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/5.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="gallery__item swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/gallery/6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/8.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/9.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/10.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/gallery/11.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__info">
+                    <h2 class="gallery__title title">We help people to find homes</h2>
+                    <div class="gallery__text text">Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa
+                        consectetur. Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh
+                        laoreet
+                        volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id
+                        lobortis.</div>
+                    <a href="" class="gallery__link link">Get in touch</a>
+                </div>
+            </div>
+        </section>
+        <section class="get-started">
+            <svg class="get-started__before" width="75" height="182" viewBox="0 0 75 182" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.5" y="3.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="7" />
+                <rect x="25.5" y="43.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="7" />
+                <rect x="47.5" y="83.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25"
+                    stroke-width="7" />
+            </svg>
+
+            <div class="get-started__container">
+                <div class="get-started__title title">Let’s simply begin with rentiz.</div>
+                <div class="get-started__content">
+                    <div class="get-started__text text">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi
+                        augue
+                        justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem
+                        viverra porta id lobortis.</div>
+                    <a href="#!" class="get-started__link link">Get Started</a>
+                </div>
+            </div>
+            <svg class="get-started__after" width="352" height="617" viewBox="0 0 352 617" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.58" d="M-104 48C-3.02255 72.5207 219.946 210.45 304 566" stroke="var(--accent-color)"
+                    stroke-width="3" />
+                <path opacity="0.47" d="M-58 2C42.9774 26.5207 265.946 164.45 350 520" stroke="var(--accent-color)"
+                    stroke-width="3" />
+                <path opacity="0.9" d="M-148 98C-47.0226 122.521 189.5 282 251.5 616" stroke="var(--accent-color)"
+                    stroke-width="3" />
+            </svg>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__container">
+                <div class="footer__block">
+                    <a href="#!" class="footer__logo">
+                        <svg width="132" height="47" viewBox="0 0 132 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="31" fill="var(--accent-color)" />
+                            <path
+                                d="M15.7976 38V9.63636H26.4339C28.6129 9.63636 30.4411 10.0149 31.9183 10.772C33.4048 11.5291 34.5266 12.5909 35.2837 13.9574C36.0501 15.3146 36.4332 16.8981 36.4332 18.7077C36.4332 20.5266 36.0455 22.1055 35.2699 23.4442C34.5036 24.7738 33.3725 25.8033 31.8768 26.5327C30.381 27.2528 28.5437 27.6129 26.3647 27.6129H18.7891V23.3473H25.6722C26.9464 23.3473 27.9897 23.1719 28.8022 22.821C29.6147 22.4609 30.2148 21.9393 30.6026 21.256C30.9996 20.5636 31.1982 19.7141 31.1982 18.7077C31.1982 17.7013 30.9996 16.8427 30.6026 16.1317C30.2056 15.4116 29.6009 14.8668 28.7884 14.4975C27.9759 14.119 26.9279 13.9297 25.6445 13.9297H20.9357V38H15.7976ZM30.4503 25.1477L37.4719 38H31.7383L24.8413 25.1477H30.4503ZM50.0542 38.4155C47.9213 38.4155 46.0794 37.9723 44.5282 37.0859C42.9863 36.1903 41.7999 34.9254 40.9689 33.2912C40.138 31.6477 39.7225 29.7134 39.7225 27.4883C39.7225 25.3001 40.138 23.3796 40.9689 21.7269C41.8091 20.065 42.9817 18.7724 44.4867 17.8491C45.9917 16.9165 47.7598 16.4503 49.791 16.4503C51.1021 16.4503 52.3393 16.6626 53.5027 17.0874C54.6752 17.5028 55.7093 18.1491 56.6049 19.0263C57.5098 19.9034 58.2207 21.0206 58.7377 22.3778C59.2548 23.7259 59.5133 25.3324 59.5133 27.1974V28.7347H42.0769V25.3555H54.7076C54.6983 24.3952 54.4906 23.5412 54.0843 22.7933C53.6781 22.0362 53.1103 21.4407 52.3809 21.0067C51.6607 20.5728 50.8205 20.3558 49.8603 20.3558C48.8354 20.3558 47.9352 20.6051 47.1596 21.1037C46.3841 21.593 45.7793 22.2393 45.3453 23.0426C44.9206 23.8366 44.7037 24.7092 44.6944 25.6602V28.6101C44.6944 29.8473 44.9206 30.9091 45.373 31.7955C45.8255 32.6726 46.4579 33.3466 47.2704 33.8175C48.0829 34.2791 49.0339 34.5099 50.1234 34.5099C50.8528 34.5099 51.513 34.4084 52.1039 34.2053C52.6948 33.9929 53.2072 33.6836 53.6412 33.2773C54.0751 32.8711 54.4029 32.3679 54.6245 31.7678L59.3056 32.294C59.0101 33.5312 58.4469 34.6115 57.6159 35.5348C56.7942 36.4489 55.7417 37.1598 54.4583 37.6676C53.1749 38.1662 51.7069 38.4155 50.0542 38.4155ZM68.7682 25.5355V38H63.7547V16.7273H68.5466V20.342H68.7959C69.2852 19.1509 70.0654 18.2045 71.1365 17.5028C72.2167 16.8011 73.5509 16.4503 75.1389 16.4503C76.607 16.4503 77.8857 16.7642 78.9752 17.392C80.074 18.0199 80.9234 18.9293 81.5235 20.1204C82.1329 21.3114 82.433 22.7564 82.4237 24.4553V38H77.4102V25.2308C77.4102 23.8089 77.0409 22.6964 76.3023 21.8931C75.5729 21.0898 74.5619 20.6882 73.2693 20.6882C72.3921 20.6882 71.6119 20.8821 70.9287 21.2699C70.2547 21.6484 69.7238 22.1978 69.336 22.918C68.9575 23.6381 68.7682 24.5107 68.7682 25.5355ZM98.1428 16.7273V20.6051H85.9138V16.7273H98.1428ZM88.933 11.6307H93.9465V31.6016C93.9465 32.2756 94.048 32.7926 94.2512 33.1527C94.4635 33.5036 94.7405 33.7436 95.0821 33.8729C95.4237 34.0021 95.8023 34.0668 96.2178 34.0668C96.5317 34.0668 96.8179 34.0437 97.0764 33.9975C97.3442 33.9513 97.5473 33.9098 97.6858 33.8729L98.5306 37.7923C98.2629 37.8846 97.8797 37.9862 97.3811 38.0969C96.8918 38.2077 96.2916 38.2724 95.5807 38.2908C94.325 38.3278 93.194 38.1385 92.1876 37.723C91.1812 37.2983 90.3825 36.6428 89.7916 35.7564C89.21 34.87 88.9237 33.7621 88.933 32.4325V11.6307ZM102.336 38V16.7273H107.349V38H102.336ZM104.856 13.7081C104.062 13.7081 103.379 13.445 102.807 12.9187C102.234 12.3832 101.948 11.7415 101.948 10.9936C101.948 10.2365 102.234 9.59481 102.807 9.06854C103.379 8.53302 104.062 8.26527 104.856 8.26527C105.66 8.26527 106.343 8.53302 106.906 9.06854C107.479 9.59481 107.765 10.2365 107.765 10.9936C107.765 11.7415 107.479 12.3832 106.906 12.9187C106.343 13.445 105.66 13.7081 104.856 13.7081ZM112.228 38V34.8146L123.196 21.0621V20.8821H112.588V16.7273H129.332V20.1481L118.889 33.6651V33.8452H129.692V38H112.228Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                    <div class="footer__text text">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue.
+                    </div>
+                    <div class="footer__socials">
+                        <a href="#!" class="footer__social">
+                            <svg class="facebook" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.999 0C4.477 0 0 4.477 0 9.999C0 14.989 3.656 19.125 8.437 19.878V12.89H5.897V9.999H8.437V7.796C8.437 5.288 9.93 3.905 12.213 3.905C13.307 3.905 14.453 4.1 14.453 4.1V6.559H13.189C11.949 6.559 11.561 7.331 11.561 8.122V9.997H14.332L13.889 12.888H11.561V19.876C16.342 19.127 19.998 14.99 19.998 9.999C19.998 4.477 15.521 0 9.999 0Z" />
+                            </svg>
+                        </a>
+                        <a href="#!" class="footer__social">
+                            <svg class="insta" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.997 4.372C6.443 4.372 4.374 6.442 4.374 8.995C4.374 11.549 6.443 13.619 8.997 13.619C11.549 13.619 13.62 11.549 13.62 8.995C13.62 6.442 11.549 4.372 8.997 4.372ZM8.997 11.999C7.338 11.999 5.993 10.654 5.993 8.996C5.993 7.337 7.338 5.993 8.997 5.993C10.656 5.993 11.999 7.337 11.999 8.996C11.999 10.654 10.656 11.999 8.997 11.999Z" />
+                                <path
+                                    d="M13.804 5.28C14.3994 5.28 14.882 4.79736 14.882 4.202C14.882 3.60664 14.3994 3.124 13.804 3.124C13.2086 3.124 12.726 3.60664 12.726 4.202C12.726 4.79736 13.2086 5.28 13.804 5.28Z" />
+                                <path
+                                    d="M17.531 3.106C17.062 1.897 16.107 0.941 14.898 0.474C14.199 0.211 13.46 0.0699999 12.712 0.0539999C11.749 0.0119999 11.444 0 9.002 0C6.56 0 6.247 -1.00583e-07 5.292 0.0539999C4.546 0.0689999 3.807 0.21 3.108 0.474C1.898 0.941 0.943 1.897 0.475 3.106C0.212 3.806 0.071 4.544 0.056 5.292C0.013 6.254 0 6.559 0 9.002C0 11.444 -7.45058e-09 11.755 0.056 12.712C0.071 13.46 0.212 14.198 0.475 14.899C0.944 16.107 1.899 17.063 3.109 17.531C3.805 17.803 4.544 17.957 5.294 17.981C6.257 18.023 6.562 18.036 9.004 18.036C11.446 18.036 11.759 18.036 12.714 17.981C13.461 17.966 14.2 17.824 14.9 17.562C16.109 17.093 17.064 16.138 17.533 14.929C17.796 14.229 17.937 13.491 17.952 12.743C17.995 11.781 18.008 11.476 18.008 9.033C18.008 6.59 18.008 6.28 17.952 5.323C17.939 4.565 17.799 3.814 17.531 3.106ZM16.313 12.638C16.306 13.214 16.202 13.785 16.002 14.326C15.697 15.113 15.076 15.735 14.29 16.037C13.755 16.236 13.191 16.34 12.62 16.348C11.67 16.392 11.402 16.403 8.966 16.403C6.528 16.403 6.279 16.403 5.311 16.348C4.742 16.341 4.176 16.236 3.642 16.037C2.853 15.736 2.228 15.114 1.923 14.326C1.727 13.792 1.621 13.227 1.612 12.657C1.569 11.707 1.559 11.439 1.559 9.003C1.559 6.566 1.559 6.317 1.612 5.348C1.619 4.772 1.723 4.202 1.923 3.661C2.228 2.872 2.853 2.251 3.642 1.949C4.176 1.751 4.742 1.646 5.311 1.638C6.262 1.595 6.529 1.583 8.966 1.583C11.403 1.583 11.653 1.583 12.62 1.638C13.191 1.645 13.755 1.75 14.29 1.949C15.076 2.252 15.697 2.874 16.002 3.661C16.198 4.195 16.304 4.76 16.313 5.33C16.356 6.281 16.367 6.548 16.367 8.985C16.367 11.421 16.367 11.683 16.324 12.639H16.313V12.638Z" />
+                            </svg>
+                        </a>
+                        <a href="#!" class="footer__social">
+                            <svg class="twitter" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.4572 2.01238C20.6876 2.35373 19.8604 2.58442 18.9924 2.68815C19.8783 2.15701 20.5589 1.31598 20.8793 0.31378C20.05 0.80564 19.1316 1.16278 18.154 1.3552C17.3712 0.52112 16.2559 0 15.0215 0C12.6514 0 10.7297 1.92147 10.7297 4.29155C10.7297 4.6279 10.7677 4.95546 10.8409 5.2696C7.27414 5.0906 4.1118 3.38203 1.99514 0.78551C1.6257 1.41935 1.41406 2.15656 1.41406 2.94309C1.41406 4.43204 2.17169 5.74563 3.32328 6.5153C2.61984 6.4929 1.95801 6.2999 1.37944 5.97846C1.37903 5.99639 1.37903 6.0143 1.37903 6.0324C1.37903 8.1118 2.85838 9.8463 4.82164 10.2406C4.46154 10.3387 4.08239 10.3912 3.69099 10.3912C3.41445 10.3912 3.1456 10.3642 2.88351 10.3142C3.42966 12.0191 5.01458 13.26 6.89259 13.2945C5.42381 14.4457 3.57332 15.1318 1.56258 15.1318C1.21617 15.1318 0.874558 15.1114 0.538818 15.0717C2.43808 16.2894 4.69396 17 7.11755 17C15.0114 17 19.3282 10.4605 19.3282 4.78918C19.3282 4.60314 19.324 4.41805 19.3157 4.23395C20.1543 3.62886 20.8819 2.87302 21.4572 2.01238Z" />
+                            </svg>
+                        </a>
+                        <a href="#!" class="footer__social">
+                            <svg class="youtube" width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.5911 2.20301C20.3611 1.34501 19.6861 0.668007 18.8291 0.437007C17.2631 0.00700739 10.9981 7.5965e-06 10.9981 7.5965e-06C10.9981 7.5965e-06 4.73413 -0.00699261 3.16713 0.404007C2.32713 0.633007 1.63313 1.32501 1.40113 2.18201C0.988133 3.74801 0.984132 6.99601 0.984132 6.99601C0.984132 6.99601 0.980132 10.26 1.39013 11.81C1.62013 12.667 2.29513 13.344 3.15313 13.575C4.73513 14.005 10.9831 14.012 10.9831 14.012C10.9831 14.012 17.2481 14.019 18.8141 13.609C19.6701 13.379 20.3481 12.703 20.5811 11.846C20.9951 10.281 20.9981 7.03401 20.9981 7.03401C20.9981 7.03401 21.0181 3.76901 20.5911 2.20301ZM8.99413 10.005L8.99913 4.00501L14.2061 7.01001L8.99413 10.005Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block links-footer">
+                    <div class="links-footer__header">Project</div>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Houses </a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Rooms</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Flats</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Appartments</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block links-footer">
+                    <div class="links-footer__header">Company</div>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">How we work ? </a>
+                        </li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Capital</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block links-footer">
+                    <div class="links-footer__header">Movement</div>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Who are we </a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Support us</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer__block links-footer">
+                    <div class="links-footer__header">Help</div>
+                    <ul class="links-footer__list">
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Privacy</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Condition</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">Blog</a></li>
+                        <li class="links-footer__item"><a href="" class="links-footer__link text">FAQs</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__container copyright-container">
+                <span class="copyright__text text">Copyright ©TemplatesJungle. 2022. All right reserved</span>
+                <span class="copyright__text text">Design by: Designer</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
